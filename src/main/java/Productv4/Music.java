@@ -3,10 +3,12 @@ package Productv4;
 public class Music extends Product {
 
     private String artist;
+    private String label;
 
     public Music() {
         super();
         artist = "";
+        label = "";
         count++;
     }
 
@@ -18,9 +20,19 @@ public class Music extends Product {
         return artist;
     }
 
+    public void setLabel(String Label) {
+        this.label = label;
+    }
+
+    public String getLabel() {
+        return label;
+    }
+
     @Override
     public String toString() {
-        return super.toString() + " by " + artist;
+        return super.toString() + " by " + artist + " / " + label;
     }
 }
+
+
 
