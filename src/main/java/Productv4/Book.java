@@ -1,7 +1,5 @@
 package Productv4;
 
-import ie.atu.productv3.Product;
-
 public class Book extends Product {
 
     private String author;
